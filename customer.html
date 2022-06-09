@@ -26,24 +26,18 @@
         </table>
         <br/>
 
-        <p class="font_Sans" id="account" style="margin-top: 120px;">餘額 : </p>
-        <table width="150" id="remain">
-            <tr><td style="font-size: 18px;" class="font_roboto">10000</td></tr>
-        </table>
-        <br/>
-
-        <p class="font_Sans" id="account" style="margin-top: 200px;">申請身份 : </p>
-        <select width="150" id="require_name" style="margin-top: 235px;">
+        <p class="font_Sans" id="account" style="margin-top: 120px;">申請身份 : </p>
+        <select width="150" id="require_name" style="margin-top: 155px;">
             <option>請選擇要申請的身分</option>
             <option>supply</option>
             <option>process</option>
             <option>agent</option>
         </select>
-        <p class="font_Sans" id="account" style="margin-top: 280px;">輸入公司名稱 : </p>
-        <input width="10px" class="font_Sans" id="input_name" style="margin-top: 315px;" />
-        <p class="font_Sans" id="account" style="margin-top: 350px;">輸入公司地址 : </p>
-        <input class="font_Sans" id="input_addr" style="margin-top: 385px;" width="50px" />
-        <button id="add_btn" style="position: fixed; margin-top: 425px; margin-left: 60px;">加入</button>
+        <p class="font_Sans" id="account" style="margin-top: 190px;">輸入公司名稱 : </p>
+        <input width="10px" class="font_Sans" id="input_name" style="margin-top: 225px;" />
+        <p class="font_Sans" id="account" style="margin-top: 260px;">輸入公司地址 : </p>
+        <input class="font_Sans" id="input_addr" style="margin-top: 295px;" width="50px" />
+        <button id="add_btn" style="position: fixed; margin-top: 330px; margin-left: 60px;">申請</button>
 
         <!--box 顯示產品-->
         <div style="position:relative; margin-left: 68px; margin-top: -40px; margin-left: 200px;">
@@ -59,7 +53,7 @@
                                     <!--
                                     <button id="resume_btn" style="margin-bottom: 5px; text-align:center;" >履歷</button>
                                     -->
-                                    <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#resume" style="margin-bottom: 5px; text-align:center; color: rgb(169, 112, 59);" >履歷</a>
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#resume" class="produce_btn" >履歷</button>
                                     <div class="modal fade" id="resume">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
@@ -68,7 +62,9 @@
                                                     <button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
                                                 </div>
                                                 <div class="modal-body">
-
+                                                    <div class="form-group">
+                                                        <!--用動態生成履歷內容(用p)-->
+                                                    </div>
                                                 </div>
                                                 <div class="modal-footer">
 
@@ -78,7 +74,7 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#buy" style="margin-bottom: 5px; text-align:center; color: rgb(203,85,35);" >購買</a>
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#buy" class="buy_btn" >購買</button>
                                     <div class="modal fade" id="buy">
                                         <div class="modal-dialog">
                                             <div class="modal-content">

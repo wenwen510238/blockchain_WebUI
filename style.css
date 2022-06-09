@@ -117,3 +117,12 @@
     color: rgb(40, 39, 39);
 }
 
+.buy_btn{
+    margin-bottom: 5px;
+    text-align:center;
+    background-color: #d13d1471;
+    border-color: #b75d1c70;
+    border-radius: 0.25rem;
+    border: solid #41636971;
+    color: rgb(40, 39, 39);
+}
