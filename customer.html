@@ -42,7 +42,7 @@
         <!--box 顯示產品-->
         <div style="position:relative; margin-left: 68px; margin-top: -40px; margin-left: 200px;">
             <table class="font_Sans" style=" text-align:center; vertical-align: middle!important; border-collapse:separate; border-spacing:10px 10px;">
-                <tr style="margin-left: 64px; text-align:center;  overflow: scroll;">
+                <tr style="margin-left: 64px; text-align:center;  overflow: scroll;" id="row1">
                     <td class="box" >
                         <table width="148px" height="100px" style="text-align:center;  vertical-align: middle!important;">
                             <tr height="70px" style="text-align:center;">
@@ -50,11 +50,8 @@
                             </tr>
                             <tr>
                                 <td width="74px">
-                                    <!--
-                                    <button id="resume_btn" style="margin-bottom: 5px; text-align:center;" >履歷</button>
-                                    -->
-                                    <button type="button" data-bs-toggle="modal" data-bs-target="#resume" class="produce_btn" >履歷</button>
-                                    <div class="modal fade" id="resume">
+                                    <button class="resume_btn produce_btn" type="button" data-bs-toggle="modal" data-bs-target="#resume1">履歷</button>
+                                    <div class="modal fade" id="resume1">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
@@ -62,7 +59,7 @@
                                                     <button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <div class="form-group">
+                                                    <div class="form-group" id="resume_content1">
                                                         <!--用動態生成履歷內容(用p)-->
                                                     </div>
                                                 </div>
@@ -74,8 +71,8 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <button type="button" data-bs-toggle="modal" data-bs-target="#buy" class="buy_btn" >購買</button>
-                                    <div class="modal fade" id="buy">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#buy1" class="buy_btn" >購買</button>
+                                    <div class="modal fade" id="buy1">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">

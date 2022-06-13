@@ -30,13 +30,81 @@
             <table class="font_Sans" style=" text-align:center; vertical-align: middle!important; border-collapse:separate; border-spacing:10px 10px;">
                 <tr style="margin-left: 64px; text-align:center;  overflow: scroll;">
                     <td class="box" >
-                        <table width="148px" height="100px" style="text-align:center;  vertical-align: middle!important;">
-                            <tr height="70px"><td class="font_roboto">第一個商品</td></tr>
+                        <table id="table_1"width="148px" height="100px" style="text-align:center;  vertical-align: middle!important;" >
+                            <tr height="70px">
+                                <td class="font_roboto" >大豆</td>
+                            </tr>
                             <tr>
                                 <td>
                                     <!--<button style="margin-bottom: 5px;">生產</button>-->
-                                    <button type="button" data-bs-toggle="modal" data-bs-target="#produce" class="produce_btn" >生產</button>
-                                    <div class="modal fade" id="produce">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#produce1" class="produce_btn" id="supply_1">生產</button>
+                                    <div class="modal fade" id="produce1">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4>生產</h4>
+                                                    <button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-group" id="body_1">
+
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">生產</button>
+                                                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">取消</button>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="box" >
+                        <table width="148px" height="100px" style="text-align:center;  vertical-align: middle!important;" id="table_2">
+                            <tr height="70px">
+                                <td class="font_roboto">牛奶</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <!--<button style="margin-bottom: 5px;">生產</button>-->
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#produce2" class="produce_btn" id="supply_2">生產</button>
+                                    <div class="modal fade" id="produce2">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4>生產</h4>
+                                                    <button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-group" id="body_2">
+                                                            <p class="form-control" style="margin-top:13px; text-align: left;">牛奶 : </p>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">生產</button>
+                                                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">取消</button>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="box" >
+                        <table width="148px" height="100px" style="text-align:center;  vertical-align: middle!important;">
+                            <tr height="70px"><td class="font_roboto">豬肉</td></tr>
+                            <tr>
+                                <td>
+                                    <!--<button style="margin-bottom: 5px;">生產</button>-->
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#produce3" class="produce_btn" >生產</button>
+                                    <div class="modal fade" id="produce3">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
@@ -66,95 +134,217 @@
                     </td>
                     <td class="box" >
                         <table width="148px" height="100px" style="text-align:center;  vertical-align: middle!important;">
-                            <tr height="70px"><td class="font_roboto">第二個商品</td></tr>
-                            <tr><td><button style="margin-bottom: 5px;">確定</button></td></tr>
+                            <tr height="70px"><td class="font_roboto">雞肉</td></tr>
+                            <tr>
+                                <td>
+                                    <!--<button style="margin-bottom: 5px;">生產</button>-->
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#produce4" class="produce_btn" >生產</button>
+                                    <div class="modal fade" id="produce4">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4>生產</h4>
+                                                    <button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control ingredient" placeholder="輸入成分"/>
+                                                            <p class="form-control" style="margin-top:13px; text-align: left;">製造日期 : </p>
+                                                            <p class="form-control" style="text-align: left;">製造商地址 : </p>
+                                                            <p class="form-control" style="text-align: left;">製造商名字 : </p>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">生產</button>
+                                                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">取消</button>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </td>
+                            </tr>
                         </table>
                     </td>
                     <td class="box" >
                         <table width="148px" height="100px" style="text-align:center;  vertical-align: middle!important;">
-                            <tr height="70px"><td class="font_roboto">第一個商品</td></tr>
-                            <tr><td><button style="margin-bottom: 5px;">確定</button></td></tr>
+                            <tr height="70px"><td class="font_roboto">牛肉</td></tr>
+                            <tr>
+                                <td>
+                                    <!--<button style="margin-bottom: 5px;">生產</button>-->
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#produce5" class="produce_btn" >生產</button>
+                                    <div class="modal fade" id="produce5">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4>生產</h4>
+                                                    <button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control ingredient" placeholder="輸入成分"/>
+                                                            <p class="form-control" style="margin-top:13px; text-align: left;">製造日期 : </p>
+                                                            <p class="form-control" style="text-align: left;">製造商地址 : </p>
+                                                            <p class="form-control" style="text-align: left;">製造商名字 : </p>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">生產</button>
+                                                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">取消</button>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </td>
+                            </tr>
                         </table>
                     </td>
                     <td class="box" >
                         <table width="148px" height="100px" style="text-align:center;  vertical-align: middle!important;">
-                            <tr height="70px"><td class="font_roboto">第一個商品</td></tr>
-                            <tr><td><button style="margin-bottom: 5px;">確定</button></td></tr>
+                            <tr height="70px"><td class="font_roboto">綠豆</td></tr>
+                            <tr>
+                                <td>
+                                    <!--<button style="margin-bottom: 5px;">生產</button>-->
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#produce6" class="produce_btn" >生產</button>
+                                    <div class="modal fade" id="produce6">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4>生產</h4>
+                                                    <button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control ingredient" placeholder="輸入成分"/>
+                                                            <p class="form-control" style="margin-top:13px; text-align: left;">製造日期 : </p>
+                                                            <p class="form-control" style="text-align: left;">製造商地址 : </p>
+                                                            <p class="form-control" style="text-align: left;">製造商名字 : </p>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">生產</button>
+                                                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">取消</button>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </td>
+                            </tr>
                         </table>
                     </td>
                     <td class="box" >
                         <table width="148px" height="100px" style="text-align:center;  vertical-align: middle!important;">
-                            <tr height="70px"><td class="font_roboto">第一個商品</td></tr>
-                            <tr><td><button style="margin-bottom: 5px;">確定</button></td></tr>
+                            <tr height="70px"><td class="font_roboto">小麥</td></tr>
+                            <tr>
+                                <td>
+                                    <!--<button style="margin-bottom: 5px;">生產</button>-->
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#produce7" class="produce_btn" >生產</button>
+                                    <div class="modal fade" id="produce7">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4>生產</h4>
+                                                    <button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control ingredient" placeholder="輸入成分"/>
+                                                            <p class="form-control" style="margin-top:13px; text-align: left;">製造日期 : </p>
+                                                            <p class="form-control" style="text-align: left;">製造商地址 : </p>
+                                                            <p class="form-control" style="text-align: left;">製造商名字 : </p>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">生產</button>
+                                                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">取消</button>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </td>
+                            </tr>
                         </table>
                     </td>
                     <td class="box" >
                         <table width="148px" height="100px" style="text-align:center;  vertical-align: middle!important;">
-                            <tr height="70px"><td class="font_roboto">第一個商品</td></tr>
-                            <tr><td><button style="margin-bottom: 5px;">確定</button></td></tr>
-                        </table>
-                    </td>
-                    <td class="box" >
-                        <table width="148px" height="100px" style="text-align:center;  vertical-align: middle!important;">
-                            <tr height="70px"><td class="font_roboto">第一個商品</td></tr>
-                            <tr><td><button style="margin-bottom: 5px;">確定</button></td></tr>
-                        </table>
-                    </td>
-                    <td class="box" >
-                        <table width="148px" height="100px" style="text-align:center;  vertical-align: middle!important;">
-                            <tr height="70px"><td class="font_roboto">第一個商品</td></tr>
-                            <tr><td><button style="margin-bottom: 5px;">確定</button></td></tr>
+                            <tr height="70px"><td class="font_roboto">芒果</td></tr>
+                            <tr>
+                                <td>
+                                    <!--<button style="margin-bottom: 5px;">生產</button>-->
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#produce8" class="produce_btn" >生產</button>
+                                    <div class="modal fade" id="produce8">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4>生產</h4>
+                                                    <button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control ingredient" placeholder="輸入成分"/>
+                                                            <p class="form-control" style="margin-top:13px; text-align: left;">製造日期 : </p>
+                                                            <p class="form-control" style="text-align: left;">製造商地址 : </p>
+                                                            <p class="form-control" style="text-align: left;">製造商名字 : </p>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">生產</button>
+                                                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">取消</button>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </td>
+                            </tr>
                         </table>
                     </td>
                 </tr>
                 <tr style="margin-left: 64px; text-align:center;  overflow: scroll;">
                     <td class="box" >
-                        <table width="148px" height="100px" style="text-align:center;  vertical-align: middle!important;">
-                            <tr height="70px"><td class="font_roboto">第一個商品</td></tr>
-                            <tr><td><button style="margin-bottom: 5px;">確定</button></td></tr>
+                        <table id="table_1"width="148px" height="100px" style="text-align:center;  vertical-align: middle!important;" >
+                            <tr height="70px">
+                                <td class="font_roboto" >紅豆</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#produce9" class="produce_btn" id="supply_1">生產</button>
+                                    <div class="modal fade" id="produce9">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4>生產</h4>
+                                                    <button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control ingredient" placeholder="輸入成分"/>
+                                                            <p class="form-control" style="margin-top:13px; text-align: left;">製造日期 : </p>
+                                                            <p class="form-control" style="text-align: left;">製造商地址 : </p>
+                                                            <p class="form-control" style="text-align: left;">製造商名字 : </p>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">生產</button>
+                                                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">取消</button>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </td>
+                            </tr>
                         </table>
                     </td>
-                </tr>
-                <tr style="margin-left: 64px; text-align:center;  overflow: scroll;">
-                    <td class="box" >
-                        <table width="148px" height="100px" style="text-align:center;  vertical-align: middle!important;">
-                            <tr height="70px"><td class="font_roboto">第一個商品</td></tr>
-                            <tr><td><button style="margin-bottom: 5px;">確定</button></td></tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr style="margin-left: 64px; text-align:center;  overflow: scroll;">
-                    <td class="box" >
-                        <table width="148px" height="100px" style="text-align:center;  vertical-align: middle!important;">
-                            <tr height="70px"><td class="font_roboto">第一個商品</td></tr>
-                            <tr><td><button style="margin-bottom: 5px;">確定</button></td></tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr style="margin-left: 64px; text-align:center;  overflow: scroll;">
-                    <td class="box" >
-                        <table width="148px" height="100px" style="text-align:center;  vertical-align: middle!important;">
-                            <tr height="70px"><td class="font_roboto">第一個商品</td></tr>
-                            <tr><td><button style="margin-bottom: 5px;">確定</button></td></tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr style="margin-left: 64px; text-align:center;  overflow: scroll;">
-                    <td class="box" >
-                        <table width="148px" height="100px" style="text-align:center;  vertical-align: middle!important;">
-                            <tr height="70px"><td class="font_roboto">第一個商品</td></tr>
-                            <tr><td><button style="margin-bottom: 5px;">確定</button></td></tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr style="margin-left: 64px; text-align:center;  overflow: scroll;">
-                    <td class="box" >
-                        <table width="148px" height="100px" style="text-align:center;  vertical-align: middle!important;">
-                            <tr height="70px"><td class="font_roboto">第一個商品</td></tr>
-                            <tr><td><button style="margin-bottom: 5px;">確定</button></td></tr>
-                        </table>
-                    </td>
-                </tr>
             </table>
         </div>
         <script src="supply_script.js"></script>
